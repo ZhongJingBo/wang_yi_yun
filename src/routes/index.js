@@ -1,6 +1,6 @@
 import React from 'react';
 import Home from '../application/home/Home';
-import Recommend from '../application/Recommend';
+import Recommend from '../application/recommend/Recommend';
 import Singers from '../application/Singers';
 import Rank from '../application/Rank';
 
