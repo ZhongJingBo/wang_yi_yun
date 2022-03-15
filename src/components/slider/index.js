@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 // Import Swiper styles
@@ -9,7 +9,10 @@ import 'swiper/css/scrollbar';
 import { SliderContainer } from './style';
 
 
+
 function MySwiper (props) {
+
+
 
     const { bannerList } = props;
 
