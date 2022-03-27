@@ -3,8 +3,7 @@ import { BrowserRouter, useRoutes } from 'react-router-dom'
 import { GlobalStyle } from './styles';
 import { IconStyle } from './assets/iconfont/iconfont';
 import routes from './routes/index'
-import { Provider } from 'react-redux'
-import store from './store/index'
+
 
 const Pages = () => {
     let element = useRoutes(routes);
@@ -15,13 +14,13 @@ const Pages = () => {
 
 function App () {
     return (
-        <Provider store={store}>
-            <BrowserRouter>
-                <IconStyle></IconStyle>
-                <GlobalStyle></GlobalStyle>
-                <Pages />
-            </BrowserRouter>
-        </Provider>
+
+        <BrowserRouter>
+            <IconStyle></IconStyle>
+            <GlobalStyle></GlobalStyle>
+            <Pages />
+        </BrowserRouter>
+
     )
 }
 
